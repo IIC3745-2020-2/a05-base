@@ -66,7 +66,7 @@ Luego, ejecutar las pruebas de mutación con `./bin/mutate` y/o las pruebas norm
 2. Entrar a sesión de `bash` dentro del contenedor
    
     ```
-    docker run -it --rm --name a05-base -v $(pwd):/tester iic3745-2020-2/a05-base
+    docker run -it --rm --name a05-base -v "$(pwd):/tester" iic3745-2020-2/a05-base
     ```
 
 Luego, ejecutar las pruebas de mutación con `./bin/mutate` o `mutate` y/o las pruebas sin mutación con `rspec` o `bundle exec rspec`.
